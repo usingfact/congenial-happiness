@@ -6,28 +6,35 @@ git
 
 commit: 파일의 변경사항을 기록하며, 로컬저장소에만 우선적으로 적용됌(내 컴퓨터에서만 적용)
 게임의 savepoint
-1일 1commit
 
 push:원격저장소에 commit 내용을 적용
-push는 검토 맡고 올려라
 
 pull: branch 파일들을 다운로드 함
 
 branch: 분기점
 master- 표준, 
 
-clone:다른 branch들의 형상정보들 다운
-
+clone : 다른 branch들의 형상정보들 다운
+전부다 가져옴
+pull : 한 개의 branch에 대해서 받아옴
 
 이름에 / 를 입력하면 폴더가 생성됌
 
 깃허브에서의 commit은 우리에겐 push가 됌
 
-git init 이 폴더를 내 저장소로 쓰겠다
+git init : 이 폴더를 내 저장소로 쓰겠다
 
 git pull 주소-> 주소내의 작업물을 내쪽으로 가져오겠다
 
-git add . 변화가 있을때 커밋 준비작업
+git add . : 변화가 있을때 커밋 준비작업
 
 git config --global init.defaultBranch main 메인으로 브랜치를 맞춘다
 
+git commit -m "add 예시 file 추가"
+
+한글 안깨지게 설정 git bash
+git config --global gui.encoding utf-8
+cmd에서도 사용 가능
+
+pull을 해야 push를 할 수 있다
+git pull origin main
